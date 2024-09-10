@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FARDHANXITJKT1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="my-button" onclick="playSoundAndRedirect()">Klik Disini</button></button>
+    
+    <audio id="click-sound" src="najeb.mp3"></audio>
+    
+    <script>
+        function playSoundAndRedirect() {
+            var sound = document.getElementById ('click-sound');
+            sound.play();
+            sound.onended = function() {
+                window.location.href ="https://drive.google.com/folderview?id=1mucCTl9leYzHaQg1Xv30st_8E2WuzH-2";
+            };
+        }
+    </script>
+</body>
+</html>
